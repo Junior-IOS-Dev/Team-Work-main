@@ -9,4 +9,21 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViewControllers()
+    }
+    
+    private func setupViewControllers() {
+        guard let _ = viewControllers?.first as? BeerVarietiesTableViewController else { return }
+        guard let _ = viewControllers?.last as? DevelopersTableViewController else { return }
+//
+//        let beers = DataManager
+//        beerVarietiesVC.beers = beers
+//
+//        let developers = DataManager
+//        developersVC.devs = developers
+        
+    }
+    
 }
