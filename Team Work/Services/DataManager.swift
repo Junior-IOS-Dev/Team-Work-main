@@ -11,7 +11,7 @@ class DataManager {
     
     static let shared = DataManager()
     
-    
+
     let fullNameDeveloper = ["Руслан Битюков", "Михаил Позялов", "Maksim Ozhgi", "Чусито"]
     
     let personInfoDeveloper = ["", "", ""]
