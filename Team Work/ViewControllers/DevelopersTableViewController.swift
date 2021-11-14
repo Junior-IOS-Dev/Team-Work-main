@@ -27,6 +27,7 @@ class DevelopersTableViewController: UITableViewController {
         let developer = devs[indexPath.row]
         
         content.text = developer.fullName
+        
         cell.contentConfiguration = content
 
         
@@ -36,6 +37,10 @@ class DevelopersTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let detailVC = segue.destination as? DeveloperInfoViewController else { return }
+            detailVC.person = devs[indexPath.row]
+        }
         
     }
 
