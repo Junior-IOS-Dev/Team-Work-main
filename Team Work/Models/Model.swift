@@ -39,11 +39,27 @@ struct Person {
 }
 
 
-//struct BeerStyle {
-//    let style: String // для экрана BeerVarietiesVC(нужен массив со стилями)
+struct BeerStyle {
+    let style: String // для экрана BeerVarietiesVC(нужен массив со стилями)
 //    let beerName: String // для экрана BeerListTableVC(нужены словари с примерами по каждому стилю)
 //    let beerInfo: String // для экрана BeerInfoVC(нужены словари с описаниями каждого пива)
-//    let imageBeer: UIImage // для экрана BeerInfoVC(нужен словарь с картинками)
-//}
+    //let imageBeer: UIImage // для экрана BeerInfoVC(нужен словарь с картинками)
+}
+
+extension BeerStyle {
+    static func getBeer() -> [BeerStyle] {
+        
+        var beerStyle: [BeerStyle] = []
+    
+        let styles = DataManager.shared.bear
+
+        for index in 0..<styles.count {
+            let beer = BeerStyle(style: styles[index])
+            beerStyle.append(beer)
+        }
+        return beerStyle
+    }
+}
+
 
 
