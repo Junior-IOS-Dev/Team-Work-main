@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="66t-Qq-UYk" kind="show" id="bDE-2r-FQM"/>
+                                    <segue destination="66t-Qq-UYk" kind="show" id="EcD-g5-0D8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -212,6 +212,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Beer guide" id="r02-xd-j6v"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tcT-Q7-WJq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

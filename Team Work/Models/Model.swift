@@ -7,6 +7,53 @@
 
 import Foundation
 
+struct BeerList {
+    let paleAleBear: String
+    let wheatAlesBear: String
+    
+    static func getBeerList() -> [BeerList] {
+        
+        var beers: [BeerList] = []
+        
+        let paleAleBears = DataManager.shared.paleAleBeer
+        let wheatAlesBears = DataManager.shared.wheatAlesBeer
+
+        let iterationCount = min(paleAleBears.count, wheatAlesBears.count)
+        
+        for index in 0..<iterationCount {
+            let beer = BeerList(paleAleBear: paleAleBears[index], wheatAlesBear: wheatAlesBears[index])
+            beers.append(beer)
+        }
+        
+        return beers
+        
+    }
+}
+
+struct BeerStyle {
+    let style: String
+    let styleTwo: String
+    
+    static func getBeer() -> [BeerStyle] {
+        
+        var beers: [BeerStyle] = []
+        
+        let styles = DataManager.shared.beer
+        let stylesTwo = DataManager.shared.beer
+
+        let iterationCount = min(styles.count, stylesTwo.count)
+        
+        for index in 0..<iterationCount {
+            let beer = BeerStyle(style: styles[index], styleTwo: stylesTwo[index])
+            beers.append(beer)
+        }
+        
+        return beers
+        
+    }
+}
+
+
 struct Person {
     
     let fullName: String
@@ -38,12 +85,5 @@ struct Person {
     }
 }
 
-
-//struct BeerStyle {
-//    let style: String // для экрана BeerVarietiesVC(нужен массив со стилями)
-//    let beerName: String // для экрана BeerListTableVC(нужены словари с примерами по каждому стилю)
-//    let beerInfo: String // для экрана BeerInfoVC(нужены словари с описаниями каждого пива)
-//    let imageBeer: UIImage // для экрана BeerInfoVC(нужен словарь с картинками)
-//}
 
 
