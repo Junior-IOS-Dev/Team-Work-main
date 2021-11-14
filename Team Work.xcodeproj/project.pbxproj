@@ -13,6 +13,7 @@
 		57FC5EE727412A060017BED2 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */; };
 		57FC5EE927412A2C0017BED2 /* BeerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */; };
 		57FC5EEB27412A670017BED2 /* DeveloperInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */; };
+		57FC5EF0274156390017BED2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EEF274156390017BED2 /* Model.swift */; };
 		B574851A273FFAFF00CF1826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5748519273FFAFF00CF1826 /* AppDelegate.swift */; };
 		B574851C273FFAFF00CF1826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574851B273FFAFF00CF1826 /* SceneDelegate.swift */; };
 		B5748521273FFAFF00CF1826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B574851F273FFAFF00CF1826 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerInfoViewController.swift; sourceTree = "<group>"; };
 		57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoViewController.swift; sourceTree = "<group>"; };
+		57FC5EEF274156390017BED2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B5748516273FFAFF00CF1826 /* Team Work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team Work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5748519273FFAFF00CF1826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B574851B273FFAFF00CF1826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,20 +62,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		57FC5EDB274123D30017BED2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		57FC5EDC274123DF0017BED2 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		57FC5EDD274123EF0017BED2 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +89,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		57FC5EEE274156200017BED2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57FC5EEF274156390017BED2 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B574850D273FFAFF00CF1826 = {
 			isa = PBXGroup;
 			children = (
@@ -120,9 +116,8 @@
 		B5748518273FFAFF00CF1826 /* Team Work */ = {
 			isa = PBXGroup;
 			children = (
+				57FC5EEE274156200017BED2 /* Models */,
 				57FC5EDA274123C10017BED2 /* ViewControllers */,
-				57FC5EDB274123D30017BED2 /* Models */,
-				57FC5EDC274123DF0017BED2 /* Services */,
 				57FC5EDD274123EF0017BED2 /* StoryBoards */,
 				57FC5EDE274124000017BED2 /* App */,
 				57FC5EDF274124090017BED2 /* Resources */,
@@ -201,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FC5EF0274156390017BED2 /* Model.swift in Sources */,
 				57FC5EE52741295F0017BED2 /* DevelopersTableViewController.swift in Sources */,
 				57FC5EE1274128440017BED2 /* TabBarController.swift in Sources */,
 				B574851A273FFAFF00CF1826 /* AppDelegate.swift in Sources */,
