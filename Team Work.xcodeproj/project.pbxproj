@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57FC5EE1274128440017BED2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE0274128440017BED2 /* TabBarController.swift */; };
+		57FC5EE3274129360017BED2 /* BeerVarietiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */; };
+		57FC5EE52741295F0017BED2 /* DevelopersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */; };
+		57FC5EE727412A060017BED2 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */; };
+		57FC5EE927412A2C0017BED2 /* BeerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */; };
+		57FC5EEB27412A670017BED2 /* DeveloperInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */; };
+		57FC5EF0274156390017BED2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EEF274156390017BED2 /* Model.swift */; };
 		B574851A273FFAFF00CF1826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5748519273FFAFF00CF1826 /* AppDelegate.swift */; };
 		B574851C273FFAFF00CF1826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574851B273FFAFF00CF1826 /* SceneDelegate.swift */; };
-		B574851E273FFAFF00CF1826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574851D273FFAFF00CF1826 /* ViewController.swift */; };
 		B5748521273FFAFF00CF1826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B574851F273FFAFF00CF1826 /* Main.storyboard */; };
 		B5748523273FFB0200CF1826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5748522273FFB0200CF1826 /* Assets.xcassets */; };
 		B5748526273FFB0200CF1826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5748524273FFB0200CF1826 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57FC5EE0274128440017BED2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerVarietiesTableViewController.swift; sourceTree = "<group>"; };
+		57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersTableViewController.swift; sourceTree = "<group>"; };
+		57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
+		57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerInfoViewController.swift; sourceTree = "<group>"; };
+		57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoViewController.swift; sourceTree = "<group>"; };
+		57FC5EEF274156390017BED2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B5748516273FFAFF00CF1826 /* Team Work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team Work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5748519273FFAFF00CF1826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B574851B273FFAFF00CF1826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B574851D273FFAFF00CF1826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5748520273FFAFF00CF1826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5748522273FFB0200CF1826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5748525273FFB0200CF1826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +49,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57FC5EDA274123C10017BED2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				57FC5EE0274128440017BED2 /* TabBarController.swift */,
+				57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */,
+				57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */,
+				57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */,
+				57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */,
+				57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		57FC5EDD274123EF0017BED2 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				B574851F273FFAFF00CF1826 /* Main.storyboard */,
+				B5748524273FFB0200CF1826 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		57FC5EDE274124000017BED2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5748527273FFB0200CF1826 /* Info.plist */,
+				B5748519273FFAFF00CF1826 /* AppDelegate.swift */,
+				B574851B273FFAFF00CF1826 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		57FC5EDF274124090017BED2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5748522273FFB0200CF1826 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57FC5EEE274156200017BED2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57FC5EEF274156390017BED2 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B574850D273FFAFF00CF1826 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +116,11 @@
 		B5748518273FFAFF00CF1826 /* Team Work */ = {
 			isa = PBXGroup;
 			children = (
-				B5748519273FFAFF00CF1826 /* AppDelegate.swift */,
-				B574851B273FFAFF00CF1826 /* SceneDelegate.swift */,
-				B574851D273FFAFF00CF1826 /* ViewController.swift */,
-				B574851F273FFAFF00CF1826 /* Main.storyboard */,
-				B5748522273FFB0200CF1826 /* Assets.xcassets */,
-				B5748524273FFB0200CF1826 /* LaunchScreen.storyboard */,
-				B5748527273FFB0200CF1826 /* Info.plist */,
+				57FC5EEE274156200017BED2 /* Models */,
+				57FC5EDA274123C10017BED2 /* ViewControllers */,
+				57FC5EDD274123EF0017BED2 /* StoryBoards */,
+				57FC5EDE274124000017BED2 /* App */,
+				57FC5EDF274124090017BED2 /* Resources */,
 			);
 			path = "Team Work";
 			sourceTree = "<group>";
@@ -138,9 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B574851E273FFAFF00CF1826 /* ViewController.swift in Sources */,
+				57FC5EF0274156390017BED2 /* Model.swift in Sources */,
+				57FC5EE52741295F0017BED2 /* DevelopersTableViewController.swift in Sources */,
+				57FC5EE1274128440017BED2 /* TabBarController.swift in Sources */,
 				B574851A273FFAFF00CF1826 /* AppDelegate.swift in Sources */,
+				57FC5EE3274129360017BED2 /* BeerVarietiesTableViewController.swift in Sources */,
 				B574851C273FFAFF00CF1826 /* SceneDelegate.swift in Sources */,
+				57FC5EE927412A2C0017BED2 /* BeerInfoViewController.swift in Sources */,
+				57FC5EE727412A060017BED2 /* BeerListTableViewController.swift in Sources */,
+				57FC5EEB27412A670017BED2 /* DeveloperInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +353,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GQU4PC2XPJ;
+				DEVELOPMENT_TEAM = WPASFV42KH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Team Work/Info.plist";
+				INFOPLIST_FILE = "Team Work/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mihail;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,11 +367,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "IOS-Kid.Team-Work";
+				PRODUCT_BUNDLE_IDENTIFIER = IOSKidTeamWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,9 +382,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GQU4PC2XPJ;
+				DEVELOPMENT_TEAM = WPASFV42KH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Team Work/Info.plist";
+				INFOPLIST_FILE = "Team Work/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mihail;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,11 +396,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "IOS-Kid.Team-Work";
+				PRODUCT_BUNDLE_IDENTIFIER = IOSKidTeamWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
