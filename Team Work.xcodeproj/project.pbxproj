@@ -360,6 +360,7 @@
 				DEVELOPMENT_TEAM = WPASFV42KH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Team Work/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mihail;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -388,6 +389,7 @@
 				DEVELOPMENT_TEAM = WPASFV42KH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Team Work/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mihail;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
