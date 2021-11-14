@@ -16,13 +16,13 @@ class TabBarController: UITabBarController {
     
     private func setupViewControllers() {
         guard let _ = viewControllers?.first as? BeerVarietiesTableViewController else { return }
-        guard let _ = viewControllers?.last as? DevelopersTableViewController else { return }
-//
+        guard let developersVC = viewControllers?.last as? DevelopersTableViewController else { return }
+
 //        let beers = DataManager
 //        beerVarietiesVC.beers = beers
-//
-//        let developers = DataManager
-//        developersVC.devs = developers
+
+        let developers = Person.getPerson()
+        developersVC.devs = developers
         
     }
     
