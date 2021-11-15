@@ -7,44 +7,46 @@
 
 import Foundation
 
-struct BeerList {
-    let paleAleBear: String
-    let wheatAlesBear: String
-    
-    static func getBeerList() -> [BeerList] {
-        
-        var beers: [BeerList] = []
-        
-        let paleAleBears = DataManager.shared.paleAleBeer
-        let wheatAlesBears = DataManager.shared.wheatAlesBeer
-
-        let iterationCount = min(paleAleBears.count, wheatAlesBears.count)
-        
-        for index in 0..<iterationCount {
-            let beer = BeerList(paleAleBear: paleAleBears[index], wheatAlesBear: wheatAlesBears[index])
-            beers.append(beer)
-        }
-        
-        return beers
-        
-    }
-}
+//struct BeerList {
+//    let paleAleBear: String
+//    let wheatAlesBear: String
+//
+//    static func getBeerList() -> [BeerList] {
+//
+//        var beers: [BeerList] = []
+//
+//        let paleAleBears = DataManager.shared.paleAleBeer
+//        let wheatAlesBears = DataManager.shared.wheatAlesBeer
+//
+//        let iterationCount = min(paleAleBears.count, wheatAlesBears.count)
+//
+//        for index in 0..<iterationCount {
+//            let beer = BeerList(paleAleBear: paleAleBears[index], wheatAlesBear: wheatAlesBears[index])
+//            beers.append(beer)
+//        }
+//
+//        return beers
+//
+//    }
+//}
 
 struct BeerStyle {
     let style: String
-    let styleTwo: String
+    let paleAleBear: String
+    let wheatAlesBear: String
     
     static func getBeer() -> [BeerStyle] {
         
         var beers: [BeerStyle] = []
         
         let styles = DataManager.shared.beer
-        let stylesTwo = DataManager.shared.beer
+        let paleAleBears = DataManager.shared.paleAleBeer
+        let wheatAlesBears = DataManager.shared.wheatAlesBeer
 
-        let iterationCount = min(styles.count, stylesTwo.count)
+        let iterationCount = min(styles.count, paleAleBears.count, wheatAlesBears.count)
         
         for index in 0..<iterationCount {
-            let beer = BeerStyle(style: styles[index], styleTwo: stylesTwo[index])
+            let beer = BeerStyle(style: styles[index], paleAleBear: paleAleBears[index], wheatAlesBear: wheatAlesBears[index])
             beers.append(beer)
         }
         

@@ -17,20 +17,38 @@ class BeerVarietiesTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
         beers.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        beers[section].style
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let beer = beers[indexPath.row]
+        let beer = beers[indexPath.section]
+
+        switch indexPath.row {
+        case 0:
+            content.text = beer.paleAleBear
+        default:
+            content.text = beer.wheatAlesBear
+        }
         
-        content.text = beer.style
         cell.contentConfiguration = content
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
