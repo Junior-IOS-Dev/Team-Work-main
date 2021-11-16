@@ -11,7 +11,6 @@
 		57FC5EE1274128440017BED2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE0274128440017BED2 /* TabBarController.swift */; };
 		57FC5EE3274129360017BED2 /* BeerVarietiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */; };
 		57FC5EE52741295F0017BED2 /* DevelopersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */; };
-		57FC5EE727412A060017BED2 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */; };
 		57FC5EE927412A2C0017BED2 /* BeerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */; };
 		57FC5EEB27412A670017BED2 /* DeveloperInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */; };
 		57FC5EF0274156390017BED2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EEF274156390017BED2 /* Model.swift */; };
@@ -27,7 +26,6 @@
 		57FC5EE0274128440017BED2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerVarietiesTableViewController.swift; sourceTree = "<group>"; };
 		57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersTableViewController.swift; sourceTree = "<group>"; };
-		57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerInfoViewController.swift; sourceTree = "<group>"; };
 		57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoViewController.swift; sourceTree = "<group>"; };
 		57FC5EEF274156390017BED2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -64,9 +62,8 @@
 			children = (
 				57FC5EE0274128440017BED2 /* TabBarController.swift */,
 				57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */,
-				57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */,
-				57FC5EE627412A060017BED2 /* BeerListTableViewController.swift */,
 				57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */,
+				57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */,
 				57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -215,7 +212,6 @@
 				57FC5EE3274129360017BED2 /* BeerVarietiesTableViewController.swift in Sources */,
 				B574851C273FFAFF00CF1826 /* SceneDelegate.swift in Sources */,
 				57FC5EE927412A2C0017BED2 /* BeerInfoViewController.swift in Sources */,
-				57FC5EE727412A060017BED2 /* BeerListTableViewController.swift in Sources */,
 				57FC5EEB27412A670017BED2 /* DeveloperInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

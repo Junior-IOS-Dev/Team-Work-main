@@ -7,49 +7,44 @@
 
 import Foundation
 
-struct BeerList {
-    let paleAleBear: String
-    let wheatAlesBear: String
+struct BeerStyle {
+    let style: String
+    let beerInfo: String
     
-    static func getBeerList() -> [BeerList] {
-        
-        var beers: [BeerList] = []
-        
-        let paleAleBears = DataManager.shared.paleAleBeer
-        let wheatAlesBears = DataManager.shared.wheatAlesBeer
-
-        let iterationCount = min(paleAleBears.count, wheatAlesBears.count)
-        
-        for index in 0..<iterationCount {
-            let beer = BeerList(paleAleBear: paleAleBears[index], wheatAlesBear: wheatAlesBears[index])
-            beers.append(beer)
-        }
-        
-        return beers
-        
+    var title: String {
+        "\(style)"
     }
 }
 
-struct BeerStyle {
-    let style: String
-    let styleTwo: String
+extension BeerStyle {
     
-    static func getBeer() -> [BeerStyle] {
-        
-        var beers: [BeerStyle] = []
-        
-        let styles = DataManager.shared.beer
-        let stylesTwo = DataManager.shared.beer
-
-        let iterationCount = min(styles.count, stylesTwo.count)
-        
-        for index in 0..<iterationCount {
-            let beer = BeerStyle(style: styles[index], styleTwo: stylesTwo[index])
-            beers.append(beer)
-        }
-        
-        return beers
-        
+    static func getBeerStyle() -> [BeerStyle] {
+        [
+            BeerStyle(style: "Pale Ale (Пейл Эль, Бледный Эль)",
+                      beerInfo: DataManager.shared.paleAleBeer),
+            BeerStyle(style: "Wheat Ales (Пшеничное пиво)",
+                      beerInfo: DataManager.shared.wheatAlesBeer),
+            BeerStyle(style: "Belgian Ales (Бельгийские эли)",
+                      beerInfo: DataManager.shared.belgianAles),
+            BeerStyle(style: "Sours (Кисляки)",
+                      beerInfo: DataManager.shared.soursBeer),
+            BeerStyle(style: "Brown Ales (Коричневый эль)",
+                      beerInfo: DataManager.shared.brownAles),
+            BeerStyle(style: "Porters (Портер)",
+                      beerInfo: DataManager.shared.porters),
+            BeerStyle(style: "Stouts (Стаут)",
+                      beerInfo: DataManager.shared.stouts),
+            BeerStyle(style: "Pale Lagers (Светлый лагер)",
+                      beerInfo: DataManager.shared.paleLagers),
+            BeerStyle(style: "Dark Lagers (Темный лагер)",
+                      beerInfo: DataManager.shared.darkLagers),
+            BeerStyle(style: "Bocks (Бок)",
+                      beerInfo: DataManager.shared.bocks),
+            BeerStyle(style: "Ambers (Амбер эль)",
+                      beerInfo: DataManager.shared.ambers),
+            BeerStyle(style: "Specialty Beer (Специальное пиво)",
+                      beerInfo: DataManager.shared.specialtyBeer)
+        ]
     }
 }
 
