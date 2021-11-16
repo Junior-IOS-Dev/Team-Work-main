@@ -9,41 +9,28 @@ import UIKit
 
 class BeerVarietiesTableViewController: UITableViewController {
     
-    var beers: [BeerStyle] = []
-
+    var beerList = BeerStyle.getBeerStyle()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.rowHeight = 100
     }
-
+    
     // MARK: - Table view data source
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        beers.count
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        beers[section].style
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     3
+        beerList.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let beer = beers[indexPath.section]
-
-        switch indexPath.row {
-        case 0:
-            content.text = beer.paleAleBear
-        default:
-            content.text = beer.wheatAlesBear
-        }
+        let beer = beerList[indexPath.row]
         
+        content.text = beer.style
+        content.image = UIImage(named: beer.title)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
-
+        
         return cell
     }
     
@@ -52,17 +39,15 @@ class BeerVarietiesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
+        return 100
     }
-
+    
     // MARK: - Navigation
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let indexPath = tableView.indexPathForSelectedRow {
-//            guard let beerListVC = segue.destination as? BeerListTableViewController else { return }
-//            beerListVC.beer = beers[indexPath.row]
-//        }
-//    }
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let beerListVC = segue.destination as? BeerInfoViewController else { return }
+            beerListVC.beer = beerList[indexPath.row]
+        }
+    }
 }
+

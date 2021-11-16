@@ -9,21 +9,15 @@ import UIKit
 
 class DeveloperInfoViewController: UIViewController {
 
+    @IBOutlet var devImage: UIView!
+    @IBOutlet var devInfo: UILabel!
+    
+    var developer: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        devInfo.text = developer.fullName
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

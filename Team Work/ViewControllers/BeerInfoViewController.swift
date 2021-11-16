@@ -8,22 +8,18 @@
 import UIKit
 
 class BeerInfoViewController: UIViewController {
-
+    
+    @IBOutlet var beerImage: UIImageView!
+    @IBOutlet var beerName: UILabel!
+    @IBOutlet var info: UILabel!
+    
+    var beer: BeerStyle!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        beerImage.image = UIImage(named: beer.title)
+        beerName.text = beer.title
+        info.text = DataManager.shared.paleAleBeer
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

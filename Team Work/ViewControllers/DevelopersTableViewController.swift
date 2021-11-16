@@ -8,19 +8,19 @@
 import UIKit
 
 class DevelopersTableViewController: UITableViewController {
-
-    var devs: [Person] = []
+    
+    var devs = Person.getPerson()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 100
     }
-
+    
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         devs.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
@@ -28,15 +28,23 @@ class DevelopersTableViewController: UITableViewController {
         
         content.text = developer.fullName
         cell.contentConfiguration = content
-
         
         return cell
     }
-
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let developerInfoVC = segue.destination as? DeveloperInfoViewController else { return }
+            developerInfoVC.developer = devs[indexPath.row]
+        }
+    }
 }
