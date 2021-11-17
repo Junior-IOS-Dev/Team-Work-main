@@ -20,7 +20,7 @@ class DeveloperInfoViewController: UIViewController {
         devImage.image = UIImage(named: developer.fullName)
         devImage.layer.cornerRadius = devImage.frame.height / 2
         devInfo.text = developer.fullName
-
+        info.text = developer.personInfo
     }
 
 }

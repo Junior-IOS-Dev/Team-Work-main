@@ -20,7 +20,7 @@ class BeerInfoViewController: UIViewController {
         beerImage.image = UIImage(named: beer.title)
         beerImage.layer.cornerRadius = beerImage.frame.height / 4
         beerName.text = beer.title
-        info.text = DataManager.shared.paleAleBeer
+        info.text = beer.beerInfo
     }
 
 }

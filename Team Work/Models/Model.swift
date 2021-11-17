@@ -20,6 +20,12 @@ extension BeerStyle {
     
     static func getBeerStyle() -> [BeerStyle] {
         [
+            BeerStyle(style: "Основной состав пива",
+                      beerInfo: DataManager.shared.mainСast),
+            BeerStyle(style: "Процесс приготовления пива",
+                      beerInfo: DataManager.shared.CookingProcess),
+            BeerStyle(style: "Как пробовать пиво",
+                      beerInfo: DataManager.shared.HowToTry),
             BeerStyle(style: "Pale Ale (Пейл Эль, Бледный Эль)",
                       beerInfo: DataManager.shared.paleAleBeer),
             BeerStyle(style: "Wheat Ales (Пшеничное пиво)",
