@@ -48,37 +48,21 @@ extension BeerStyle {
     }
 }
 
-
 struct Person {
-    
+
     let fullName: String
     let personInfo: String
-    let imageDevoloper: String
-    
-    static func getPerson() -> [Person] {
-        
-        var persons: [Person] = []
-        
-        let fullNames = DataManager.shared.fullNameDeveloper
-        let personsInfo = DataManager.shared.personInfoDeveloper
-        let imageDevolopers = DataManager.shared.imageDeveloper
-        
-        let iterationCount = min(
-            fullNames.count,
-            personsInfo.count,
-            imageDevolopers.count
-        )
-        
-        for index in 0..<iterationCount {
-            let person = Person(fullName: fullNames[index],
-                                personInfo: personsInfo[index],
-                                imageDevoloper: imageDevolopers[index])
-            persons.append(person)
-        }
-        
-        return persons
-    }
 }
 
+extension Person {
+    static func getPerson() -> [Person] {
+        [Person(fullName: "Руслан Битюков",
+                personInfo: DataManager.shared.ruslan),
+         Person(fullName: "Михаил Позялов", personInfo: DataManager.shared.mihail),
+         Person(fullName: "Maksim Ozhgi", personInfo: DataManager.shared.maksim),
+         Person(fullName: "Чусито", personInfo: DataManager.shared.chusito)
+        ]
+    }
+}
 
 

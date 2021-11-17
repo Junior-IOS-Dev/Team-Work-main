@@ -27,6 +27,8 @@ class DevelopersTableViewController: UITableViewController {
         let developer = devs[indexPath.row]
         
         content.text = developer.fullName
+        content.image = UIImage(named: developer.fullName)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         
         return cell
@@ -37,7 +39,7 @@ class DevelopersTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
+        return 100
     }
     
     // MARK: - Navigation

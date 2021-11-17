@@ -165,18 +165,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5TN-ij-dHC">
-                                <rect key="frame" x="20" y="155" width="374" height="300.5"/>
+                                <rect key="frame" x="20" y="155" width="374" height="351"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gz-PC-4X6">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iIR-DY-oBL">
                                         <rect key="frame" x="62" y="0.0" width="250" height="250"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="BXX-Wn-IcH"/>
-                                            <constraint firstAttribute="height" constant="250" id="zot-fs-Erv"/>
+                                            <constraint firstAttribute="width" constant="250" id="7iz-9E-CJD"/>
+                                            <constraint firstAttribute="height" constant="250" id="FOu-8T-YbY"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGd-M6-yVa">
                                         <rect key="frame" x="166.5" y="280" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM5-i3-zfD">
+                                        <rect key="frame" x="166.5" y="330.5" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -194,8 +199,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="dXM-ih-upL"/>
                     <connections>
-                        <outlet property="devImage" destination="3gz-PC-4X6" id="C5L-dB-dXn"/>
+                        <outlet property="devImage" destination="iIR-DY-oBL" id="vJ0-mM-2pu"/>
                         <outlet property="devInfo" destination="IGd-M6-yVa" id="yBu-W9-8eC"/>
+                        <outlet property="info" destination="KM5-i3-zfD" id="rBA-tv-mvF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9s-Ca-fod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
