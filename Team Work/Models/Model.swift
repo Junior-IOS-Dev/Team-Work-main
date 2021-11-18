@@ -10,10 +10,17 @@ import Foundation
 struct BeerStyle {
     let style: String
     let beerInfo: String
+}
+
+struct BeerGlass {
+    let glassName: String
+    let glassInfo: String
+}
+
+struct Person {
     
-    var title: String {
-        "\(style)"
-    }
+    let fullName: String
+    let personInfo: String
 }
 
 extension BeerStyle {
@@ -54,19 +61,34 @@ extension BeerStyle {
     }
 }
 
-struct Person {
-
-    let fullName: String
-    let personInfo: String
+extension BeerGlass {
+    static func getBeerGlass() -> [BeerGlass] {
+        [BeerGlass(glassName: "Пинта Nonic",
+                   glassInfo: DataManager.shared.pintaNonic),
+         BeerGlass(glassName: "Снифтер",
+                   glassInfo: DataManager.shared.snifter),
+         BeerGlass(glassName: "Тюльпан",
+                   glassInfo: DataManager.shared.tulip),
+         BeerGlass(glassName: "Пилснер",
+                   glassInfo: DataManager.shared.pilsner),
+         BeerGlass(glassName: "Вайцен",
+                   glassInfo: DataManager.shared.weizen),
+         BeerGlass(glassName: "Теку",
+                   glassInfo: DataManager.shared.teku)
+        ]
+    }
 }
 
 extension Person {
     static func getPerson() -> [Person] {
         [Person(fullName: "Руслан Битюков",
                 personInfo: DataManager.shared.ruslan),
-         Person(fullName: "Михаил Позялов", personInfo: DataManager.shared.mihail),
-         Person(fullName: "Maksim Ozhgi", personInfo: DataManager.shared.maksim),
-         Person(fullName: "Чусито", personInfo: DataManager.shared.chusito)
+         Person(fullName: "Михаил Позялов",
+                personInfo: DataManager.shared.mihail),
+         Person(fullName: "Maksim Ozhgi",
+                personInfo: DataManager.shared.maksim),
+         Person(fullName: "Чусито",
+                personInfo: DataManager.shared.chusito)
         ]
     }
 }

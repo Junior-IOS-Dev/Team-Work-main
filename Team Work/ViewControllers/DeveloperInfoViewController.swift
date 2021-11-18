@@ -18,7 +18,7 @@ class DeveloperInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         devImage.image = UIImage(named: developer.fullName)
-        devImage.layer.cornerRadius = devImage.frame.height / 2
+        devImage.layer.cornerRadius = devImage.frame.height / 3
         devInfo.text = developer.fullName
         info.text = developer.personInfo
     }
