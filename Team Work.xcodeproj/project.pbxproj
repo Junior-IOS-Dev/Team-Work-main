@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		571320CC27416556000D9FF8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571320CB27416556000D9FF8 /* DataManager.swift */; };
+		57D0E7CE2746CD9A002B8687 /* BeerGlassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0E7CD2746CD9A002B8687 /* BeerGlassTableViewController.swift */; };
+		57D0E7D02746D16A002B8687 /* BeerGlassInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0E7CF2746D16A002B8687 /* BeerGlassInfoViewController.swift */; };
 		57FC5EE1274128440017BED2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE0274128440017BED2 /* TabBarController.swift */; };
 		57FC5EE3274129360017BED2 /* BeerVarietiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */; };
 		57FC5EE52741295F0017BED2 /* DevelopersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		571320CB27416556000D9FF8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		57D0E7CD2746CD9A002B8687 /* BeerGlassTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerGlassTableViewController.swift; sourceTree = "<group>"; };
+		57D0E7CF2746D16A002B8687 /* BeerGlassInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerGlassInfoViewController.swift; sourceTree = "<group>"; };
 		57FC5EE0274128440017BED2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerVarietiesTableViewController.swift; sourceTree = "<group>"; };
 		57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersTableViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				57FC5EE0274128440017BED2 /* TabBarController.swift */,
 				57FC5EE2274129360017BED2 /* BeerVarietiesTableViewController.swift */,
 				57FC5EE827412A2C0017BED2 /* BeerInfoViewController.swift */,
+				57D0E7CD2746CD9A002B8687 /* BeerGlassTableViewController.swift */,
+				57D0E7CF2746D16A002B8687 /* BeerGlassInfoViewController.swift */,
 				57FC5EE42741295F0017BED2 /* DevelopersTableViewController.swift */,
 				57FC5EEA27412A670017BED2 /* DeveloperInfoViewController.swift */,
 			);
@@ -204,9 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D0E7CE2746CD9A002B8687 /* BeerGlassTableViewController.swift in Sources */,
 				57FC5EF0274156390017BED2 /* Model.swift in Sources */,
 				571320CC27416556000D9FF8 /* DataManager.swift in Sources */,
 				57FC5EE52741295F0017BED2 /* DevelopersTableViewController.swift in Sources */,
+				57D0E7D02746D16A002B8687 /* BeerGlassInfoViewController.swift in Sources */,
 				57FC5EE1274128440017BED2 /* TabBarController.swift in Sources */,
 				B574851A273FFAFF00CF1826 /* AppDelegate.swift in Sources */,
 				57FC5EE3274129360017BED2 /* BeerVarietiesTableViewController.swift in Sources */,
@@ -365,7 +373,7 @@
 				DEVELOPMENT_TEAM = WPASFV42KH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Team Work/App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Mihail;
+				INFOPLIST_KEY_CFBundleDisplayName = BeerStyle;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -395,7 +403,7 @@
 				DEVELOPMENT_TEAM = WPASFV42KH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Team Work/App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Mihail;
+				INFOPLIST_KEY_CFBundleDisplayName = BeerStyle;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

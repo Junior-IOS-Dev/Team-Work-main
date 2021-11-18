@@ -27,7 +27,7 @@ class BeerVarietiesTableViewController: UITableViewController {
         let beer = beerList[indexPath.row]
         
         content.text = beer.style
-        content.image = UIImage(named: beer.title)
+        content.image = UIImage(named: beer.style)
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         

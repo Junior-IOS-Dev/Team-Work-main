@@ -1,34 +1,34 @@
 //
-//  DevelopersTableViewController.swift
+//  BeerGlassTableViewController.swift
 //  Team Work
 //
-//  Created by Михаил Позялов on 14.11.2021.
+//  Created by Михаил Позялов on 18.11.2021.
 //
 
 import UIKit
 
-class DevelopersTableViewController: UITableViewController {
+class BeerGlassTableViewController: UITableViewController {
     
-    var devs = Person.getPerson()
-    
+    var beerGlassList = BeerGlass.getBeerGlass()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 100
     }
-    
+
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        devs.count
+        beerGlassList.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let developer = devs[indexPath.row]
+        let beer = beerGlassList[indexPath.row]
         
-        content.text = developer.fullName
-        content.image = UIImage(named: developer.fullName)
-        content.imageProperties.cornerRadius = tableView.rowHeight / 3
+        content.text = beer.glassName
+        content.image = UIImage(named: beer.glassName)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         
         return cell
@@ -45,8 +45,8 @@ class DevelopersTableViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
-            guard let developerInfoVC = segue.destination as? DeveloperInfoViewController else { return }
-            developerInfoVC.developer = devs[indexPath.row]
+            guard let beerGlassListVC = segue.destination as? BeerGlassInfoViewController else { return }
+            beerGlassListVC.beerGlass = beerGlassList[indexPath.row]
         }
     }
 }
